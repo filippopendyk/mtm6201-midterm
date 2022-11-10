@@ -80,9 +80,21 @@ footer i{
     padding: 1rem;
 }
 
-.products-page-h2{
-    font-size: 2rem;
+.products{
+    padding: 1rem;
 }
+
+.products h2{
+    font-size: 3rem;
+}
+
+.products h3{
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
+
+
+
 
 
 @media only screen and (min-width: 992px){
