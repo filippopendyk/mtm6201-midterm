@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Aroma</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="index.css">
 </head>
@@ -12,9 +12,9 @@
     <header>
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#products">Products</a></li>
-                <li><a href="#about-us">About us</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about-us.html">About us</a></li>
                 <li><a href="#contact-us">Contact</a></li>
             </ul>
         </nav>
@@ -25,37 +25,93 @@
         <h2>Products</h2>
 
         <h3>Here you can find our products!</h3>
-    </div>
 
     <div class="products-container">
 
         <div class="product">
-            <h3>Strawberry Cheesecake</h3>
+
+            <img class="product-image"
+            srcset="images/strawberry-480.jpg 480w,
+                    images/strawberry-720.jpg 720w,
+                    images/strawberry-1080.jpg 1080w"
+            sizes="
+                    (max-width: 480px) 480px,
+                    (max-width: 720px) 720px,
+                    (max-width: 1080px) 1080px"
+            src="images/strawberry-480.jpg" alt="strawberry cheesecake image">
+            <h3>Strawberry Cheesecake - 40 CAD</h3> 
+        </div>
+
+        <div class="product">
+            <img class="product-image"
+            srcset="images/lemon-pie-480.jpg 480w,
+                    images/lemon-pie-720.jpg 720w,
+                    images/lemon-pie-1080.jpg 1080w"
+            sizes="
+                    (max-width: 480px) 480px,
+                    (max-width: 720px) 720px,
+                    (max-width: 1080px) 1080px"
+            src="images/lemon-pie-480.jpg" alt="lemon pie image">
+            <h3>Lemon Pie - 40 CAD</h3>
             
         </div>
 
         <div class="product">
-            <h3>Lemon Pie</h3>
+            <img class="product-image"
+            srcset="images/choco-cake-480.jpg 480w,
+                    images/choco-cake-720.jpg 720w,
+                    images/choco-cake-1080.jpg 1080w"
+            sizes="
+                    (max-width: 480px) 480px,
+                    (max-width: 720px) 720px,
+                    (max-width: 1080px) 1080px"
+            src="images/choco-cake-480.jpg" alt="chocolate cake image">
+            <h3>Chocolate Cake - 40 CAD</h3>
         </div>
 
         <div class="product">
-            <h3>Chocolate Cake</h3>
+            <img class="product-image"
+            srcset="images/tiramisu-480.jpg 480w,
+                    images/tiramisu-720.jpg 720w,
+                    images/tiramisu-1080.jpg 1080w"
+            sizes="
+                    (max-width: 480px) 480px,
+                    (max-width: 720px) 720px,
+                    (max-width: 1080px) 1080px"
+            src="images/tiramisu-480.jpg" alt="tiramisu image">
+            <h3>Tiramisu - 40 CAD</h3>
         </div>
 
         <div class="product">
-            <h3>Tiramisu</h3>
+            <img class="product-image"
+            srcset="images/birthday-480.jpg 480w,
+                    images/birthday-720.jpg 720w,
+                    images/birthday-1080.jpg 1080w"
+            sizes="
+                    (max-width: 480px) 480px,
+                    (max-width: 720px) 720px,
+                    (max-width: 1080px) 1080px"
+            src="images/birthday-480.jpg" alt="birthday image">
+            <h3>Birthday Cake - CUSTOM PRICE</h3>
         </div>
 
         <div class="product">
-            <h3>Birthday Cake</h3>
-        </div>
-
-        <div class="product">
-            <h3>Papal Cream Cake</h3>
+            <img class="product-image"
+            srcset="images/kremowka-480.jpg 480w,
+                    images/kremowka-720.jpg 720w,
+                    images/kremowka-1080.jpg 1080w"
+            sizes="
+                    (max-width: 480px) 480px,
+                    (max-width: 720px) 720px,
+                    (max-width: 1080px) 1080px"
+            src="images/kremowka-480.jpg" alt="papal cake (kremowka) image">
+            <h3>Papal Cream Cake - 40 CAD</h3>
         </div>
 
 
     </div>
+
+</div>
 
 </body>
 </html>
