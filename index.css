@@ -1,6 +1,10 @@
 body{
     font-family: 'Roboto', sans-serif;
     color: white;
+    background: #CC9888;
+    background: -webkit-linear-gradient(top right, #CC9888, #98698E);
+    background: -moz-linear-gradient(top right, #CC9888, #98698E);
+    background: linear-gradient(to bottom left, #CC9888, #98698E);
 }
 
 #popcakes-img-container{
@@ -9,10 +13,7 @@ body{
 
 #main-container{
     max-height: 100vh;
-    background: #CC9888;
-    background: -webkit-linear-gradient(top right, #CC9888, #98698E);
-    background: -moz-linear-gradient(top right, #CC9888, #98698E);
-    background: linear-gradient(to bottom left, #CC9888, #98698E);
+    height: 100vh;
 }
 
 #popcakes-img-container img{
@@ -35,10 +36,7 @@ header nav ul li{
 
 header nav ul li a{
     text-decoration: none;
-}
-
-header nav ul{
-    margin: auto;
+    color: white;
 }
 
 .emoji-paragraph{
@@ -82,6 +80,10 @@ footer i{
     padding: 1rem;
 }
 
+.products-page-h2{
+    font-size: 2rem;
+}
+
 
 @media only screen and (min-width: 992px){
     #main-container{
@@ -95,5 +97,11 @@ footer i{
 
     #content-box{
         width: 50%;
+    }
+}
+
+@media only screen and (max-width: 992px){
+    #popcakes-img-container{
+        display: none;
     }
 }
