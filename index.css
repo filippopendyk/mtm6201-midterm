@@ -7,7 +7,22 @@ body{
     background: -webkit-linear-gradient(top right, #CC9888, #98698E);
     background: -moz-linear-gradient(top right, #CC9888, #98698E);
     background: linear-gradient(to bottom left, #CC9888, #98698E);
+    min-height: 100vh;
 }
+
+.skip-link{
+    position:absolute;
+    top:-40px;
+    left:0;
+    background: #BF1722;
+    color: white;
+    padding: 8px;
+    z-index: 100;
+  }
+  
+  .skip-link:focus{
+    top:0;
+  }
 
 #popcakes-img-container{
     width: 100%;
@@ -120,17 +135,17 @@ footer i{
     margin: auto;
 }
 
-.about-container{
+#about-container{
     width: 90%;
     margin: auto;
 }
 
-.about-container h2{
+#about-container h2{
     margin-top: 2rem;
     font-size: 3rem;
 }
 
-.about-container p{
+#about-container p{
     font-size: 1.5rem;
     margin: 1rem 0 1rem 0;
     line-height: 150%;
@@ -157,6 +172,10 @@ footer i{
 .contact-container h2{
     font-size: 3rem;
     margin: 1rem 0;
+}
+
+form{
+    margin-bottom: 16rem;
 }
 
 form label{

@@ -16,6 +16,9 @@
 
 <div id="main-container">
 
+    <a href="#nav" class="skip-link">Skip to main nav</a>
+    <a href="#main" class="skip-link">Skip to main content</a>
+
     <!-- nesting everything in main container, to split page in two equal containers -->
 
     <div id="popcakes-img-container">
@@ -24,8 +27,8 @@
 
     <div id="content-box">
 
-        <header>
-            <nav>
+        <header role="banner">
+            <nav id="nav" role="navigation">
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="products.html">Products</a></li>
@@ -35,13 +38,13 @@
             </nav>
         </header>
 
-        <main>
+        <main id="main" role="main">
 
             <h1>Aroma</h1>
             
             <p class="emoji-paragraph">🧁🧁🧁</p>
             
-            <button class="our-products-btn"><a href="products.html">Our Products</a></button>
+            <button class="our-products-btn" onclick="window.location.href = 'products.html';">Our Products</button>
 
             <h2>For every flavour, for every mood!</h2>
 

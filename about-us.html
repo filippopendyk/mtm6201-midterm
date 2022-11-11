@@ -10,8 +10,12 @@
     <script src="https://kit.fontawesome.com/bd07b8e9a3.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-        <nav>
+
+    <a href="#nav" class="skip-link">Skip to main nav</a>
+    <a href="#about-container" class="skip-link">Skip to main content</a>
+
+    <header role="banner">
+        <nav id="nav" role="navigation">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="products.html">Products</a></li>
@@ -21,7 +25,7 @@
         </nav>
     </header>
 
-    <div class="about-container">
+    <div id="about-container" role="region">
 
         <h2>Who we are?</h2>
 
@@ -38,14 +42,18 @@
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1435386.436928966!2d-77.51399305542192!3d45.35912382823269!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1667792852948!5m2!1sen!2sca" width="450" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
             <div class="location-info">
-              <h3>Our Location</h3>  
-              <p>1385 Woodroffe Ave, Nepean, ON k2G 1V8</p>
+              <h3>Our Location</h3>
+              <p itemscope itemtype="https://schema.org/PostalAddress">
+                <span itemprop="streetAddress">1385 Woodroffe Ave</span>
+                <span itemprop="adressLocality">Nepean</span>
+                <span itemprop="postalCode">ON K2G 1V8</span>
+              </p>
             </div>
         </div>
 
     </div>
 
-    <footer>
+    <footer role="contentinfo">
         <i class="fa-brands fa-instagram"></i>
         <i class="fa-brands fa-square-facebook"></i>
         <i class="fa-brands fa-twitter"></i>
