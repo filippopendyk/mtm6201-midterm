@@ -53,7 +53,16 @@ header nav ul li{
 
 header nav ul li a{
     text-decoration: none;
-    color: white;
+    box-shadow: inset 0 0 0 0 lightgray;
+    color:white;
+    margin: 0 -.25rem;
+    padding: 0 .25rem;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+header nav ul li a:hover{
+    box-shadow: inset 100px 0 0 0 white;
+    color: gray
 }
 
 .emoji-paragraph{
@@ -86,7 +95,9 @@ main{
     border: 0;
     background-color: #ffd1dc;
     margin-bottom: 2rem;
+    animation: shake 1.5s linear infinite;
 }
+
 
 .our-products-btn a{
     color: gray;
@@ -252,3 +263,27 @@ textarea{
         grid-template-columns: 1fr 1fr 1fr;
     }
 }
+
+@keyframes shake {
+    0%, 7% {
+      transform: rotateZ(0);
+    }
+    15% {
+      transform: rotateZ(-15deg);
+    }
+    20% {
+      transform: rotateZ(10deg);
+    }
+    25% {
+      transform: rotateZ(-10deg);
+    }
+    30% {
+      transform: rotateZ(6deg);
+    }
+    35% {
+      transform: rotateZ(-4deg);
+    }
+    40%, 100% {
+      transform: rotateZ(0);
+    }
+  }
