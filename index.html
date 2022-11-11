@@ -22,7 +22,13 @@
     <!-- nesting everything in main container, to split page in two equal containers -->
 
     <div id="popcakes-img-container">
-        <img id="title-image" src="images/cake-pops.jpg" alt="image of popcakes">
+        <img id="title-image"
+            srcset="images/cake-pops-500.jpg 720w,
+                    images/cake-pops-1000.jpg 1080w"
+            sizes="
+                    (max-width: 720px) 720px,
+                    (max-width: 1080px) 1080px"
+            src="images/cake-pops-500.jpg" alt="image of popcakes">
     </div>
 
     <div id="content-box">
